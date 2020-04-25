@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1587817994203.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "38B11A53",
+    "lastKnownWriteTime" : 1587818059,
+    "last_content_update" : 1587818059630,
+    "path" : "~/Personal/rstudioProjectTemplate/inst/rstudio/templates/rstudioProjectTemplate.dcf",
+    "project_path" : "inst/rstudio/templates/rstudioProjectTemplate.dcf",
+    "properties" : {
+        "cursorPosition" : "5,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}
