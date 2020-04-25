@@ -6,7 +6,7 @@ Many works in the data science realm rely solely upon the data scientist/analyst
 
 * Create an R package;
 * Create a function in that R package that handles the folders/files/project creation;
-* Add a `.dcf` file in the folder inst/rstudio/templates/<NAME_OF_YOUR_TEMPLATE.dcf>
+* Add a `.dcf` file in the folder inst/rstudio/templates/project/<NAME_OF_YOUR_TEMPLATE.dcf>
 * `devtools::document()`
 * `devtools::install()`
 
@@ -85,7 +85,7 @@ With the function file created, the next step is to create the `.dcf` file. This
 
 > This solution (development or production) was just created for illustration purposes, it does not reflect any actual state of a project.
 
-The `.dcf` file must be created within the package in the folder `inst/rstudio/templates` with the name of your choice, and it should follow the syntax below:
+The `.dcf` file must be created within the package in the folder `inst/rstudio/templates/project` with the name of your choice, and it should follow the syntax below:
 
 ```
 Binding: create_project
