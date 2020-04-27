@@ -2,30 +2,24 @@
 
 Many works in the data science realm rely solely upon the data scientist/analyst to guarantee the project standardization and code reproducibility; unfortunately, this becomes a source of confusion/disorganization since everybody (even on the same team) have different work strategies. To help ensure that teams share the same project standards, RStudio offers a sort of cookiecutter, where you can develop (in form of packages) many templates to be shared amongst users on the same team.
 
-## TL;DR
-
-* Create an R package;
-* Create a function in that R package that handles the folders/files/project creation;
-* Add a `.dcf` file in the folder inst/rstudio/templates/project/<NAME_OF_YOUR_TEMPLATE.dcf>
-* `devtools::document()`
-* `devtools::install()`
+![](inst/extdata/image_header.png)
 
 ---
 
 ## The story behind project templates
 
-Recent studies aim to provide the society with methodologies that help users to better understand, and organize their projects, data, and insights generated from this data. From [CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) going all the way to [Team Data Science Process](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview), passing through [KDD](https://en.wikipedia.org/wiki/Data_mining#Process), we have experienced many ways to enhance our ability to work in teams, joining efforts to reach the desired insights faster, and with more reprodubicility. 
+Recent studies aim to provide the society with methodologies that help users to better understand and organize their projects, data, and insights generated from this data. From [CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) going all the way to [Team Data Science Process](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview), passing through [KDD](https://en.wikipedia.org/wiki/Data_mining#Process), we have experienced many ways to enhance our ability to work in teams, joining efforts to reach the desired insights faster, and with more reproducibility. 
 
-Nonetheless, this process repeats itself for an infinite number of times, and the process of going back and re-developing an insight, or re-training a model, becomes a challenge because the code that was written long ago, is not easily reacheable, and may be hard to understand the whole process that took to develop this project a few weeks/months/years ago.
+Nonetheless, this process repeats itself for an infinite number of times, and the process of going back and re-developing an insight, or re-training a model, becomes a challenge because the code that was written long ago, is not easily reachable, and may be hard to understand the whole process that took to develop this project a few weeks/months/years ago.
 
 A few of the projects may look like this:
-![inst/extdata/messy_project_image.png](Image representing an unorganized way to store data and code)
+![An image representing an unorganized way to store data and code](inst/extdata/messy_project_image.png)
 
-Even though it may be faster to just open a repository, and just put the scripts, files, functions, .gitignores and any sort of the files needed to deliver a [shiny](https://shiny.rstudio.com/) webpage or a machine learning model, or an analysis of some kind, this process lack the ability to create code and processes that can be understood by any other person that may be assigned to this project in the future.
+Even though it may be faster to just open a repository, and just put the scripts, files, functions, .gitignores and any sort of the files needed to deliver a [shiny](https://shiny.rstudio.com/) webpage or a machine learning model, or an analysis of some kind, this process lacks the ability to create code and processes that can be understood by any other person that may be assigned to this project in the future.
 
-So, the aim of this RStudio Project Templates, is to help users create some sort of pattern when starting a project, helping the team to standardize the project organization and in a way that everybody can easily be assigned to a project, and understand what is happening there.
+So, the aim of this RStudio Project Templates is to help users create some sort of pattern when starting a project, helping the team to standardize the project organization and in a way that everybody can easily be assigned to a project, and understand what is happening there.
 
-And maybe, turn their projects into something like this:
+And maybe, turn projects into something like this:
 ```
 -- project_directory/
  | -- data/
