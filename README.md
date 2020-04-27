@@ -12,6 +12,37 @@ Many works in the data science realm rely solely upon the data scientist/analyst
 
 ---
 
+## The story behind project templates
+
+Recent studies aim to provide the society with methodologies that help users to better understand, and organize their projects, data, and insights generated from this data. From [CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining) going all the way to [Team Data Science Process](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview), passing through [KDD](https://en.wikipedia.org/wiki/Data_mining#Process), we have experienced many ways to enhance our ability to work in teams, joining efforts to reach the desired insights faster, and with more reprodubicility. 
+
+Nonetheless, this process repeats itself for an infinite number of times, and the process of going back and re-developing an insight, or re-training a model, becomes a challenge because the code that was written long ago, is not easily reacheable, and may be hard to understand the whole process that took to develop this project a few weeks/months/years ago.
+
+A few of the projects may look like this:
+![inst/extdata/messy_project_image.png](Image representing an unorganized way to store data and code)
+
+Even though it may be faster to just open a repository, and just put the scripts, files, functions, .gitignores and any sort of the files needed to deliver a [shiny](https://shiny.rstudio.com/) webpage or a machine learning model, or an analysis of some kind, this process lack the ability to create code and processes that can be understood by any other person that may be assigned to this project in the future.
+
+So, the aim of this RStudio Project Templates, is to help users create some sort of pattern when starting a project, helping the team to standardize the project organization and in a way that everybody can easily be assigned to a project, and understand what is happening there.
+
+And maybe, turn their projects into something like this:
+```
+-- project_directory/
+ | -- data/
+    | -- raw/
+    | -- reference/
+    | -- processed/
+ | -- scripts/
+    | -- modelling/
+    | -- analysis/
+    | -- production/
+ | -- markdown/
+ -- .gitignore
+ -- project_directory.Rproj
+```
+
+---
+
 ## Creating a new R Package
 
 The process of R package creation (a fairly simple one) is pretty straightforward. [Hadley's R Package Guide](http://r-pkgs.had.co.nz/) covers many of the caveats involved in the process of creating a package. But since our package will contain only one function, it shouldn't require the complexity involved in the development of a more robust package.
